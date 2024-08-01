@@ -1,0 +1,12 @@
+target/
+*.log
+*.tmp
+.classpath
+.project
+.settings/
+.idea/
+.vscode/
+node_modules/
+npm-debug.log
+.env
+dist/

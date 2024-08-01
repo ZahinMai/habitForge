@@ -1,0 +1,55 @@
+// Define the User entity with additional onboarding information
+entity User {
+    username String required unique,
+    email String required unique,
+    passwordHash String required,
+    firstName String,
+    lastName String,
+    userStreak Integer required, // Track the user's current streak
+    activityLevel ActivityLevel, // Enum for activity level
+    diet Diet, // Enum for diet
+    cooks Boolean, // Indicates if the user cooks
+    drives Boolean // Indicates if the user drives
+}
+
+// Define the Task entity with target streak
+entity Task {
+    name String required,
+    description String,
+    startDate LocalDate,
+    streak Integer required, // Current streak
+    targetStreak Integer required // Target streak
+}
+
+// Define enums
+enum ActivityLevel {
+    LOW,
+    MEDIUM,
+    HIGH
+}
+
+enum Diet {
+    VEGAN,
+    VEGETARIAN,
+    PESCATARIAN,
+    OMNIVORE
+}
+
+// Define relationships
+relationship OneToMany {
+    User{tasks} to Task
+}
+
+// Define the Authority entity for user roles
+entity Authority {
+    name String required
+}
+
+relationship ManyToMany {
+    User{authorities} to Authority{users}
+}
+
+// Specify DTOs, services, and pagination
+dto User, Task with mapstruct
+service all with serviceClass
+paginate User, Task with pagination
