@@ -1,0 +1,12 @@
+<div>
+  <router-outlet name="navbar"></router-outlet>
+</div>
+
+<div class="container-fluid" [ngClass]="{ 'light-theme': darkMode, 'dark-theme': darkMode }">
+  <span id="toggle" (click)="toggleTheme()" tabindex="0"></span>
+  <div class="card jh-card">
+    <router-outlet></router-outlet>
+  </div>
+
+  <jhi-footer></jhi-footer>
+</div>

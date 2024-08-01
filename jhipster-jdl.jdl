@@ -1,8 +1,5 @@
-// Define the User entity with additional onboarding information
-entity User {
-    username String required unique,
-    email String required unique,
-    passwordHash String required,
+// Define the UserProfile entity with additional onboarding information
+entity UserProfile {
     firstName String,
     lastName String,
     userStreak Integer required, // Track the user's current streak
@@ -36,20 +33,10 @@ enum Diet {
 }
 
 // Define relationships
+relationship OneToOne {
+    UserProfile{user(login)} to User
+}
+
 relationship OneToMany {
-    User{tasks} to Task
+    UserProfile{tasks} to Task
 }
-
-// Define the Authority entity for user roles
-entity Authority {
-    name String required
-}
-
-relationship ManyToMany {
-    User{authorities} to Authority{users}
-}
-
-// Specify DTOs, services, and pagination
-dto User, Task with mapstruct
-service all with serviceClass
-paginate User, Task with pagination

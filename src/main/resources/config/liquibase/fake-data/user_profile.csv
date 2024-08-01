@@ -1,0 +1,11 @@
+id;first_name;last_name;user_streak;activity_level;diet;cooks;drives
+1;Braeden;West;416;LOW;VEGAN;false;false
+2;Antone;Sanford;66507;MEDIUM;PESCATARIAN;false;false
+3;Tyrese;Crist;49522;LOW;PESCATARIAN;false;true
+4;Irving;Dickinson;28524;MEDIUM;OMNIVORE;false;true
+5;Hipolito;DuBuque;95082;HIGH;VEGETARIAN;false;true
+6;Coty;Hamill;5286;LOW;OMNIVORE;false;false
+7;Drake;Monahan;2200;HIGH;VEGAN;false;false
+8;Charles;Grimes;88523;HIGH;VEGAN;false;false
+9;Roosevelt;Boyer;52387;HIGH;PESCATARIAN;false;false
+10;Gerhard;Kemmer;75045;MEDIUM;VEGAN;true;true

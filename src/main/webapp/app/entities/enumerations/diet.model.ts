@@ -1,0 +1,9 @@
+export enum Diet {
+  VEGAN = 'VEGAN',
+
+  VEGETARIAN = 'VEGETARIAN',
+
+  PESCATARIAN = 'PESCATARIAN',
+
+  OMNIVORE = 'OMNIVORE',
+}

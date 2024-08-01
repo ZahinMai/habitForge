@@ -1,0 +1,11 @@
+{
+  "habitForgeApp": {
+    "Diet": {
+      "null": "",
+      "VEGAN": "VEGAN",
+      "VEGETARIAN": "VEGETARIAN",
+      "PESCATARIAN": "PESCATARIAN",
+      "OMNIVORE": "OMNIVORE"
+    }
+  }
+}
