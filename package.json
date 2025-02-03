@@ -1,0 +1,40 @@
+{
+  "name": "habitforge",
+  "version": "1.0.0",
+  "description": "A gamified habit-building app to help users form and track habits, with personalized user profiles and a social-driven environment. Built with the MEVN stack (MongoDB, Express, Vue.js, Node.js), HabitForge uses gamification techniques to encourage sustained engagement, improve productivity, and develop positive habits over time.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run client\" \"npm run start\"",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.3",
+    "vue-router": "^3.6.5",
+    "vue-toastification": "^1.7.14",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vue-cli-service": "^5.0.10"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
